@@ -1,5 +1,5 @@
 html {
-font-size: 10px;
+font-size: 16px;
 font-family: sans-serif;
 }
 
@@ -13,7 +13,7 @@ h1 {
 font-family: 'billabong', 'billabongregular';
 text-align: center;
 font-size: 13rem;
-font-weight: 100;
+font-weight: 300;
 margin:2rem 0;
 letter-spacing: -1;
 color:rgb(4, 7, 41);
@@ -42,6 +42,7 @@ body{
   background: offwhite;
 }
 
+/*
 .photoGrid{
   max-width: 1000px;
   margin: 0 auto;
@@ -57,7 +58,7 @@ body{
   padding: 2rem;
   flex-grow: 1;
   margin: 0rem 2rem 2rem 2rem;
-}
+}*/
 
 .figure .single-photo{
   flex-basis: calc(33.333% - 4rem);
@@ -117,12 +118,12 @@ body{
   resize: vertical;
 }
 
-
+/*
 
 .photo{
   width: calc(100% + 4rem);
   margin: -2rem 0rem 0rem -2rem;
-}
+}*/
 
 
 .button-container {
