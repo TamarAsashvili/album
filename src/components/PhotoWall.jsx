@@ -1,20 +1,20 @@
-import React, { Component } from 'react'
+import React from 'react'
 import Photo from './Photo'
 import { CardDeck, Container } from 'react-bootstrap';
 
-class PhotoWall extends Component {
-    render() {
-        return (
-            <div>
-                <Container>
-                    <CardDeck>
-                        {this.props.posts.map((post, index) => <Photo key={index} post={post} />)}
-                    </CardDeck>
-                </Container>
+function PhotoWall(props) {
+    return (
+        <div>
+            <Container style={{ width: '1500px' }}>
+                <CardDeck >
+                    {props.posts.map((post, index) => <Photo key={index} post={post} />)}
+                </CardDeck>
+            </Container>
 
-            </div>
-        )
-    }
+        </div>
+    )
 }
+
+
 
 export default PhotoWall;
