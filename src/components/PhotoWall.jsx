@@ -5,7 +5,7 @@ import { CardDeck, Container } from 'react-bootstrap';
 function PhotoWall(props) {
     return (
         <div>
-            <Container style={{ width: '1500px' }}>
+            <Container >
                 <CardDeck >
                     {props.posts.map((post, index) => <Photo key={index} post={post} />)}
                 </CardDeck>
