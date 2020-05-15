@@ -7,7 +7,7 @@ function PhotoWall(props) {
         <div>
             <Container >
                 <CardDeck >
-                    {props.posts.map((post, index) => <Photo key={index} post={post} />)}
+                    {props.posts.map((post, index) => <Photo key={index} post={post} onRemovePhoto={props.onRemovePhoto} />)}
                 </CardDeck>
             </Container>
 

@@ -11,7 +11,9 @@ function Photo(props) {
                 <Card.Body>
                     <Card.Title>{post.description}</Card.Title>
                     <div>
-                        <Button variant="info">Remove</Button>
+                        <Button variant="info" onClick={() => {
+                            props.onRemovePhoto(post)
+                        }}>Remove</Button>
                     </div>
                 </Card.Body>
             </Card>

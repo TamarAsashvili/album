@@ -16,21 +16,30 @@ export default class Main extends Component {
             },
             {
                 id: '1',
-                description: 'elian beautikdfdskl',
+                description: '111111111111',
                 imageLink: 'https://media-cdn.tripadvisor.com/media/photo-s/0e/96/7f/97/coffe-latte-100-arabica.jpg'
             },
             {
                 id: '2',
-                description: 'elian beautikdfdskl',
+                description: '2222222222222222222',
                 imageLink: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRRDN4krPBCKdnVygKHsJJdBkS39eAMjo9qC8DCroy05BsVMAij&usqp=CAU'
             },
             {
                 id: '3',
-                description: 'elian beautikdfdskl',
+                description: '3333333',
                 imageLink: 'https://static.turbosquid.com/Preview/2016/07/04__14_12_56/1.png1099343B-CB1E-4859-808F-C8AB319102C6Original.jpg'
             }
             ]
         }
+        this.removePhoto = this.removePhoto.bind(this);
+    }
+
+
+    removePhoto(postRemoved) {
+        console.log(postRemoved.description)
+        this.setState((state) => ({
+            posts: state.posts.filter(post => post !== postRemoved)
+        }))
     }
 
     render() {
@@ -38,7 +47,7 @@ export default class Main extends Component {
             <div>
 
                 <Title title={'Photo Gallery'} />
-                <PhotoWall posts={this.state.posts} />
+                <PhotoWall posts={this.state.posts} onRemovePhoto={this.removePhoto} />
 
             </div>
         )
