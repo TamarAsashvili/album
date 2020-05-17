@@ -5,7 +5,7 @@ import PhotoWall from './PhotoWall'
 
 
 
-export default class Main extends Component {
+class Main extends Component {
     constructor() {
         super()
         this.state = {
@@ -28,10 +28,10 @@ export default class Main extends Component {
                 id: '3',
                 description: 'luna',
                 imageLink: 'https://static.turbosquid.com/Preview/2016/07/04__14_12_56/1.png1099343B-CB1E-4859-808F-C8AB319102C6Original.jpg'
-            }
-            ]
+            }]
         }
         this.removePhoto = this.removePhoto.bind(this);
+
     }
 
 
@@ -40,6 +40,15 @@ export default class Main extends Component {
         this.setState((state) => ({
             posts: state.posts.filter(post => post !== postRemoved)
         }))
+    }
+
+    componentDidMount() {
+
+    }
+
+    componentDidUpdate(prevProps, prevState) {
+        console.log(prevState.posts)
+        console.log(this.state)
     }
 
     render() {
@@ -53,3 +62,7 @@ export default class Main extends Component {
         )
     }
 }
+
+
+
+export default Main;
