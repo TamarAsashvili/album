@@ -1,5 +1,7 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { Button, Card } from 'react-bootstrap';
+
 
 function Photo(props) {
     const post = props.post;
@@ -19,6 +21,12 @@ function Photo(props) {
             </Card>
         </div>
     )
+}
+
+
+Photo.propTypes = {
+    post: PropTypes.object.isRequired,
+    onRemovePhoto: PropTypes.func.isRequired
 }
 
 export default Photo

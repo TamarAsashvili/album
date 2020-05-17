@@ -21,12 +21,12 @@ export default class Main extends Component {
             },
             {
                 id: '2',
-                description: '2222222222222222222',
+                description: 'mariam',
                 imageLink: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRRDN4krPBCKdnVygKHsJJdBkS39eAMjo9qC8DCroy05BsVMAij&usqp=CAU'
             },
             {
                 id: '3',
-                description: '3333333',
+                description: 'luna',
                 imageLink: 'https://static.turbosquid.com/Preview/2016/07/04__14_12_56/1.png1099343B-CB1E-4859-808F-C8AB319102C6Original.jpg'
             }
             ]
